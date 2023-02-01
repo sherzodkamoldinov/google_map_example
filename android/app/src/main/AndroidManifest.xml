@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.google_map_example">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="google_map_example"
         android:name="${applicationName}"
@@ -30,5 +33,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <!--HERE GOOGLE API KEY-->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyBsfJeW1glf-UN07y2LG6_6kMWtkz8zSNY"/>
     </application>
 </manifest>
